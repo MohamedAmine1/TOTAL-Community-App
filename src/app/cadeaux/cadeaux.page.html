@@ -1,0 +1,134 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="danger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="danger">Nos Cadeaux</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/totalClubCadeaux.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>Votre Solde est de {{pts}} pts</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+      <img src="/assets/icon/don.png" alt="" />
+      <ion-card-header>
+        <ion-card-title color="danger">Dons aux Associations</ion-card-title>
+        <ion-card-subtitle>2000pts</ion-card-subtitle>
+        <div padding>
+          <ion-button size="large" expand="block" (click)="presentAlertDon(2000)">J'achete</ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+
+  <ion-card class="welcome-card">
+      <img src="/assets/icon/s10.PNG" alt="" />
+      <ion-card-header>
+        <ion-card-title color="danger">Samsung Galaxy S10</ion-card-title>
+        <ion-card-subtitle>50000pts</ion-card-subtitle>
+        <div padding>
+          <ion-button size="large" expand="block" (click)="presentAlertConfirm(50000)">J'achete</ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card class="welcome-card">
+      <img src="/assets/icon/california.jpg" alt="" />
+      <ion-card-header>
+        <ion-card-title color="danger">-20% de Réduction sur l'abonnement California Gym</ion-card-title>
+        <ion-card-subtitle>30000pts</ion-card-subtitle>
+        <div padding>
+          <ion-button size="large" expand="block" (click)="presentAlertConfirm(30000)">J'achete</ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/carte.png" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Cartes Carb/Lub</ion-card-title>
+      <ion-card-subtitle>20000pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" expand="block" (click)="presentAlertConfirm(20000)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/maillot.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Maillot de Foot</ion-card-title>
+      <ion-card-subtitle>15000pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" type="button" expand="block" (click)="presentAlertConfirm(15000)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/reposeTete.png" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Repose Tête / Porte Doc Voiture / Arbre Magique</ion-card-title>
+      <ion-card-subtitle>10000pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" type="button" expand="block" (click)="presentAlertConfirm(10000)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/sac.png" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Sac de Sport</ion-card-title>
+      <ion-card-subtitle>10000pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" type="button" expand="block" (click)="presentAlertConfirm(10000)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/casquette.png" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Casquette</ion-card-title>
+      <ion-card-subtitle>5000pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" type="button" expand="block" (click)="presentAlertConfirm(5000)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/mug.png" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Mug</ion-card-title>
+      <ion-card-subtitle>2500pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" type="button" expand="block" (click)="presentAlertConfirm(2500)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/porteCles.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title color="danger">Porte Clés</ion-card-title>
+      <ion-card-subtitle>2500pts</ion-card-subtitle>
+      <div padding>
+        <ion-button size="large" type="button" expand="block" (click)="presentAlertConfirm(2500)">J'achete</ion-button>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <img src="/assets/icon/horizontal.PNG" alt="" height="35"/>
+  </ion-toolbar>
+</ion-footer>

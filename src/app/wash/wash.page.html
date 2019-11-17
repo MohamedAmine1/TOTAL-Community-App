@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="danger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="danger">Lavage Voiture</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/icon/wash.jpg" alt="" />
+  </ion-card>
+  <form #form="ngForm" (ngSubmit)="valider(form)">
+    <ion-grid>
+      <ion-row color="light" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div padding>
+            <ion-item color="light">
+              <ion-label>Station:</ion-label>
+              <div>
+                <select class="theme-construction">
+                  <option>Station TOTAL les jardins du Lac</option>
+                  <option>Station TOTAL la marsa</option>
+                  <option>Station TOTAL GP8</option>
+                  <option>Station TOTAL utique</option>
+                  <option>Station TOTAL sfax</option>
+                  <option>Station TOTAL gabes</option>
+                  <option>Station TOTAL kef</option>
+                  <option>Station TOTAL khaireddine becha</option>
+                </select>
+              </div>
+            </ion-item>
+            <ion-item color="light">
+              <ion-label>Type:</ion-label>
+              <div>
+                <select class="theme-construction">
+                  <option>Lavage Voiture</option>
+                </select>
+              </div>
+            </ion-item>
+            <ion-item color="light">
+              <ion-label>Date RDV:</ion-label>
+              <ion-input name="comment" type="date" placeholder="Commentaire" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Valider RDV</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <img src="/assets/icon/horizontal.PNG" alt="" height="35"/>
+  </ion-toolbar>
+</ion-footer>

@@ -17,10 +17,52 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
+      title: 'Prise de RDV',
+      url: '/rdv',
       icon: 'list'
+    },
+    {
+      title: 'Noter Station',
+      url: '/evaluation',
+      icon: 'list'
+    },
+    {
+      title: 'Chat',
+      url: '/chat-room',
+      icon: 'list'
+    },
+    {
+      title: 'Espace Post',
+      url: '/post',
+      icon: 'list'
+    },
+    {
+      title: 'Nos Actualité',
+      url: '/events',
+      icon: 'list'
+    },
+    {
+      title: 'Découvrez nos Cadeaux',
+      url: '/cadeaux',
+      icon: 'list'
+    },
+    {
+      title: 'La Station La Plus Proche',
+      url: '/station',
+      icon: 'list'
+    },
+    {
+      title: 'Jeux & Divertissement',
+      url: '/jeux',
+      icon: 'list'
+    },
+    {
+      title: 'Log Out',
+      url: '/',
+      icon: 'paper-plane'
     }
+    
+    
   ];
 
   constructor(
@@ -29,6 +71,7 @@ export class AppComponent {
     private statusBar: StatusBar
   ) {
     this.initializeApp();
+  
   }
 
   initializeApp() {
